@@ -1,0 +1,54 @@
+@import './variables.scss';
+
+ol,
+li,
+ul {
+  list-style: none;
+}
+
+.theme--light {
+  &.v-application {
+    background: #fafaf9;
+  }
+}
+
+.v-tooltip__content {
+  // background: #000;
+  border-radius: 0;
+  // background: #0b1316 !important;
+  background: #000 !important;
+  padding: 0;
+}
+.v-tooltip__content.menuable__content__active {
+  opacity: 1;
+}
+
+.v-chip {
+  padding: 0 4px;
+}
+.v-chip.v-size--small {
+  border-radius: 12px;
+  font-size: 11px;
+  height: 20px;
+}
+
+
+// 优化
+
+.v-select__selections input {
+  display: none;
+}
+
+.v-menu__content {
+  max-height: initial !important;
+}
+
+// 禁用所有涟漪效果
+.v-ripple__container {
+  display: none !important;
+}
+
+.v-dialog {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  overflow-y: initial;
+}
